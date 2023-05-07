@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex {
+        display: flex;
+    }
+
+    #lista {
+        display: block;
+        width: 10vw;
+        height: 15vh;
+    }
+
+    input {
+        height: 15px;
+    }
+
+    button {
+        height: 21px;
+        margin: 0 5px;
+    }
+
+    span {
+        display: none;
+        margin-left: 10px;
+    }
+
+    .mostrar {
+        display: block;
+        color: red;
+    }
+
+    #fila {
+        display: block;
+        width: 10vw;
+        height: 15vh;
+    }
+</style>
+
+<body>
+    <div class="flex">
+        <label for="">Pilha: </label>
+        <br>
+        <div id="lista" class="lista"></div>
+        Adicionar: <input type="text" id="add" placeholder="Digite o que será inserido">
+        <button onclick="adicionar()">Adicionar</button>
+        <button onclick="remover()">Remover ultimo</button>
+        <label for="" id="top"></label>
+        <span id="erro">Pilha está cheia!</span>
+    </div>
+    <div class="flex">
+        <label for="">Fila: </label>
+        <br>
+        <div class="lista" id="fila"></div>
+        Adicionar: <input type="text" id="filaValue" placeholder="Digite o que será inserido">
+        <button onclick="add()">Adicionar</button><button onclick="remove()">Remover</button>
+        <span id="erroFila">Fila está cheia!</span>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
